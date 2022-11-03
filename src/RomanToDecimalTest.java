@@ -3,7 +3,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Javadoc
+ * @version 11.2.2022
+ * @author 25pandey
  */
 public class RomanToDecimalTest {
 
@@ -40,7 +41,7 @@ public class RomanToDecimalTest {
         assertEquals(RomanToDecimal.romanToDecimal("ld"), -2);
         assertEquals(RomanToDecimal.romanToDecimal("MJISTHEGOAT"), -1);
         assertEquals(RomanToDecimal.romanToDecimal("mjisthegoat"), -1);
-        assertNotEquals(RomanToDecimal.romanToDecimal("IVIV"), 10);
-        assertNotEquals(RomanToDecimal.romanToDecimal("XIIIII"), 15);
+        assertNotEquals(RomanToDecimal.romanToDecimal("IVIV"), 10); //not equals
+        assertNotEquals(RomanToDecimal.romanToDecimal("XIIIII"), 15); //not equals
     }
 }
