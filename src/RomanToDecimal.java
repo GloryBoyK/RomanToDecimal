@@ -1,9 +1,15 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Scanner;
-
+/**
+ * @version 10.31.2022
+ * @author 25pandey
+ */
 public class RomanToDecimal {
-
+    /**
+     * Take in an integer and use the value as keys and finds the values, then combine for the answer
+     * @param decimal
+     * @return variable type String
+     */
     public static String decimalToRoman(int decimal) {
         HashMap<Integer, String> digitConverter = new HashMap<>();
         digitConverter.put(1, "I");
@@ -82,7 +88,6 @@ public class RomanToDecimal {
 
     /**
      * Take in a string and use each character as a key and find its value, then add for the answer
-     *
      * @param roman
      * @return variable type int
      */
@@ -158,6 +163,10 @@ public class RomanToDecimal {
         }
     }
 
+    /**
+     * Main method for class RomanToDecimal
+     * @param args
+     */
     public static void main(String[] args) {
         //Scanner s = new Scanner(System.in);
         //System.out.print("Enter your Roman number: ");
